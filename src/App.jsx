@@ -58,9 +58,9 @@ function App() {
   } 
 
   return (
-      <div className='h-screen w-screen bg-gray-300 flex flex-col items-center justify-center'>
+      <div className='h-screen w-screen bg-black flex flex-col items-center justify-center'>
         <div className='w-80 flex flex-col items-center justify-center mx-auto gap-10'>
-          <h1 className='text-5xl font-bold text-center'>Ta te ti</h1>
+          <h1 className='text-5xl font-bold text-center text-white'>TA TE TI</h1>
           <div className='flex flex-row items-center justify-center gap-5'>
             <ResetBtn resetTablero={resetTablero}/>
             <Turnos turno={turno} />
@@ -68,8 +68,8 @@ function App() {
           <Tablero>
               {tablero.map((_, i) => (
                 <Casillero key={i} actualizarTablero={actualizarTablero} index={i} chequearGanador={chequearGanador} >
-                  {tablero[i] == 'x' && <RxCross2 size='4rem'  />}
-                  {tablero[i] == 'o' && <PiCircleLight size='4rem'  />}
+                  {tablero[i] == 'x' && <RxCross2 size='4rem' color='white' />}
+                  {tablero[i] == 'o' && <PiCircleLight size='4rem' color='white'  />}
                   {tablero[i] == null && null} 
                 </Casillero>
             ))}

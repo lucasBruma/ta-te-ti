@@ -6,20 +6,20 @@ function Turnos({turno}) {
     <div className='flex flex-row gap-4 items-center justify-center'>
         {turno === 'x' ?
             <>
-                <div className='bg-cyan-500 rounded-full p-2 w-20'>
-                    <RxCross2 size='4rem' />
+                <div className='bg-white rounded-full p-2 w-20'>
+                    <RxCross2 size='4rem' color='black' />
                 </div>
                 <div className='p-2 w-20'>
-                    <PiCircleLight size='4rem' />
+                    <PiCircleLight size='4rem' color='gray' />
                 </div>
             </>
             :
             <>
                 <div className='p-2 w-20'>
-                    <RxCross2 size='4rem' />
+                    <RxCross2 size='4rem' color='gray' />
                 </div>
-                <div className='bg-cyan-500 rounded-full p-2'>
-                    <PiCircleLight size='4rem' />
+                <div className='bg-white rounded-full p-2'>
+                    <PiCircleLight size='4rem' color='black' />
                 </div>
             </>
 

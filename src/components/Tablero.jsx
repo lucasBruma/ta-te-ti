@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 function Tablero({children}) {
   return (
-    <div className="grid gap-4 grid-cols-3 grid-rows-3">
+    <div className="grid grid-cols-3 grid-rows-3">
       {children}
     </div>
   )

@@ -1,14 +1,13 @@
-import { useState } from 'react'
-
-
+import { bordes } from "../constants"
 
 function Casillero({children, actualizarTablero, index, chequearGanador}) {
   const handleClick = () => {  
     actualizarTablero(index)
   }
+  const borde = bordes[index]
 
   return (
-    <button onClick={handleClick} className='w-[100px] h-[100px] rounded-md border-2 border-black flex justify-center items-center'>
+    <button onClick={handleClick} className={`w-[100px] h-[100px] ${borde} border-white flex justify-center items-center`}>
         {children}
     </button>
   )

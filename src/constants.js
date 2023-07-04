@@ -13,3 +13,15 @@ export const combosGanadores = [
     [0, 4, 8],
     [2, 4, 6]
 ]
+
+export const bordes = [
+  'border-b border-r',
+  'border-b',
+  'border-l border-b',
+  'border-b',
+  'border-l border-r',
+  'border-b',
+  'border-r',
+  'border-t',
+  'border-l'
+]
