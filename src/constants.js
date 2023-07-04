@@ -16,12 +16,12 @@ export const combosGanadores = [
 
 export const bordes = [
   'border-b border-r',
+  'border-b border-r',
   'border-b',
-  'border-l border-b',
-  'border-b',
-  'border-l border-r',
+  'border-b border-r',
+  'border-r border-b',
   'border-b',
   'border-r',
-  'border-t',
-  'border-l'
+  'border-r',
+  ''
 ]
