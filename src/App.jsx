@@ -20,13 +20,18 @@ function App() {
 
   useEffect(() => {
     const tablero = localStorage.getItem('tablero')
+    console.log(tablero)
     if(tablero){
       setTablero(JSON.parse(tablero))
     }else{
       setTablero(Array(9).fill(null))
     }
     const turnoStorage = localStorage.getItem('turno')
-    setTurno(turnoStorage)
+    if(turnoStorage){
+      setTurno(turnoStorage)
+    }else{
+      setTurno(turnos.x)
+    }
   },[])
 
   const actualizarTablero = (index) => {

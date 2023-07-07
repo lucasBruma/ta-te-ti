@@ -3,8 +3,6 @@ import {PiCircleLight} from 'react-icons/pi'
 
 function ModalGanador({ganador, resetTablero}) {
 
-
-
   return (
     <div className='flex flex-col items-center justify-center w-full h-full bg-black/50 absolute'>
         <div className='flex flex-col items-center justify-evenly w-96 h-80 bg-black rounded-3xl shadow-lg shadow-white/20'>

@@ -1,6 +1,6 @@
 import { bordes } from "../constants"
 
-function Casillero({children, actualizarTablero, index, chequearGanador}) {
+function Casillero({children, actualizarTablero, index}) {
   const handleClick = () => {  
     actualizarTablero(index)
   }
